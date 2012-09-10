@@ -1,0 +1,58 @@
+/*component*/
+div#tooltip_ellement{
+	padding: 0 10px;
+	border-radius: 5px;
+	background: rgba(0, 0, 0, .8);
+	border-color: rgba(0, 0, 0, .8);
+	color: white;
+	position: absolute;
+	display: none;
+	width: 200px;
+}
+div#tooltip_ellement:before {
+	content: "";
+	position: absolute;
+	border: 3px solid transparent;
+}
+
+div#tooltip_ellement.north:before {
+	top: -6px;
+	border-bottom: 3px solid rgba(0, 0, 0, .8);
+}
+
+div#tooltip_ellement.south:before {
+	bottom: -6px;
+	border-top: 3px solid rgba(0, 0, 0, .8);
+}
+
+div#tooltip_ellement.west:before {
+	left: -6px;
+	border-right: 3px solid rgba(0, 0, 0, .8);
+}
+
+div#tooltip_ellement.east:before {
+	right: -6px;
+	border-left: 3px solid rgba(0, 0, 0, .8);
+}
+
+div#tooltip_ellement.top:before {
+	top: 13%;
+}
+div#tooltip_ellement.bottom:before {
+	bottom: 10%;
+}
+div#tooltip_ellement.left:before {
+	left: 5%;
+}
+div#tooltip_ellement.right:before {
+	right: 5%;
+}
+div#tooltip_ellement.center:before {
+	right: 50%;
+}
+div#tooltip_ellement.middle:before {
+	top: 50%;
+}
+
+/*demo*/
+span{border:3px solid;}

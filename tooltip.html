@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="tooltip.css">
+</head>
+<body>
+	<span tooltip="top left" style="float:left; border-color:yellow">top left</span>
+	<span tooltip="top right" style="float:right; border-color:blue;">top right</span>	
+	<span tooltip="middle center" style="clear:both; margin:0 auto; border-color:green;width: 100px;
+display: block;">middle center</span>
+	<span tooltip="bottom left" style="position:absolute;bottom:0; left:0; border-color:red">bottom left</span>
+	<span tooltip="bottom right" style="position:absolute;bottom:0; right:0; border-color:orange">bottom right</span>
+
+	<div style="position: absolute; top:400px; left:300px; height:400px; width:400px; background-color: wheat;">positioned absolute
+		<span tooltip="inside absolute positioned element" style="border-color:black; margin: 80px auto;">inside absolute positioned element</span>
+		<p>
+			Elements inside absolute positioned containers returns 
+		</p>
+	</div>
+
+	<div tooltip="blabla" class="menubar-nav-item" >blablabla</div>
+
+	<script type="text/javascript" src="jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="tooltip.js"></script>
+</body>
+</html>

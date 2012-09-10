@@ -1,3 +1,4 @@
+
 var tooltip = {
 	// user editable parameters
 	distance: 3,
@@ -14,7 +15,7 @@ var tooltip = {
 	$target_offset_left: 0,
 	$target_offset_top: 0,
 
-	init: function(){
+	init: function() {
 		tooltip.createTipEllement();
 		tooltip.resize();
 		$("[tooltip]").live("mouseenter", tooltip.show);
@@ -45,11 +46,13 @@ var tooltip = {
 		tooltip.$target_offset_left = t_offset.left;
 		tooltip.$target_offset_top = t_offset.top;
  	},
+
  	display: function(){
 		tooltip.$.html( tooltip.$target.attr("tooltip") );
 		tooltip.position();
 		tooltip.$.show();
  	},
+
 	close: function(){
 		clearTimeout( tooltip.timeout );
 		tooltip.$.hide();
@@ -101,9 +104,11 @@ var tooltip = {
 	calculate_h_right_pos: function(){
 		return tooltip.$target_offset_left + tooltip.$target_width + tooltip.distance;
 	},
+
 	calculate_h_left_pos: function(){
 		return tooltip.$target_offset_left - tooltip.$.outerWidth() - tooltip.distance;
 	},
+
 	calculate_h_center_pos: function(){
 		return (tooltip.$target_offset_left*2 + tooltip.$target_width)/2 - tooltip.$.outerWidth()/2;
 	},
@@ -111,9 +116,11 @@ var tooltip = {
 	calculate_v_bottom_pos: function(){
 		return tooltip.$target_offset_top + tooltip.$target_height + tooltip.distance;
 	},
+
 	calculate_v_top_pos: function(){
 		return tooltip.$target_offset_top - tooltip.$target_height - tooltip.distance;
 	},
+
 	calculate_v_center_pos: function(){
 		return (tooltip.$target_offset_top*2 + tooltip.$target_height)/2 - tooltip.$.outerHeight()/2;
 	},

@@ -30,7 +30,7 @@ var tooltip = {
 
 	createTipEllement: function(){
 		tooltip.$ = $('<div/>', {
-			id: 'tooltip_ellement'
+			id: 'tooltip-element'
 		});
 		tooltip.$.appendTo('body');
 	},

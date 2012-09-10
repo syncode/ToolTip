@@ -1,5 +1,5 @@
 /*component*/
-div#tooltip_ellement{
+div#tooltip_element{
 	padding: 0 10px;
 	border-radius: 5px;
 	background: rgba(0, 0, 0, .8);
@@ -9,48 +9,48 @@ div#tooltip_ellement{
 	display: none;
 	width: 200px;
 }
-div#tooltip_ellement:before {
+div#tooltip_element:before {
 	content: "";
 	position: absolute;
 	border: 3px solid transparent;
 }
 
-div#tooltip_ellement.north:before {
+div#tooltip_element.north:before {
 	top: -6px;
 	border-bottom: 3px solid rgba(0, 0, 0, .8);
 }
 
-div#tooltip_ellement.south:before {
+div#tooltip_element.south:before {
 	bottom: -6px;
 	border-top: 3px solid rgba(0, 0, 0, .8);
 }
 
-div#tooltip_ellement.west:before {
+div#tooltip_element.west:before {
 	left: -6px;
 	border-right: 3px solid rgba(0, 0, 0, .8);
 }
 
-div#tooltip_ellement.east:before {
+div#tooltip_element.east:before {
 	right: -6px;
 	border-left: 3px solid rgba(0, 0, 0, .8);
 }
 
-div#tooltip_ellement.top:before {
+div#tooltip_element.top:before {
 	top: 13%;
 }
-div#tooltip_ellement.bottom:before {
+div#tooltip_element.bottom:before {
 	bottom: 10%;
 }
-div#tooltip_ellement.left:before {
+div#tooltip_element.left:before {
 	left: 5%;
 }
-div#tooltip_ellement.right:before {
+div#tooltip_element.right:before {
 	right: 5%;
 }
-div#tooltip_ellement.center:before {
+div#tooltip_element.center:before {
 	right: 50%;
 }
-div#tooltip_ellement.middle:before {
+div#tooltip_element.middle:before {
 	top: 50%;
 }
 
